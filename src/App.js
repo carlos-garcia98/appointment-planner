@@ -16,15 +16,15 @@ function App() {
   contacts and appointments 
   */
   const [contacts, setContacts] = useState([
-    { name: "John Doe", phoneNumber: "333-333-33", email: "john.doe@mail.com" },
+    { name: "", phoneNumber: "", email: "" },
   ]);
 
   const [appointments, setAppointments] = useState([
     {
-      name: "Appointment",
-      contact: "John Doe",
-      date: Date.now(),
-      time: "10:21",
+      name: "",
+      contact: "",
+      date: "",
+      time: "",
     },
   ]);
 
@@ -55,6 +55,7 @@ function App() {
           element={
             <AppointmentsPage
               appointments={appointments}
+              contacts={contacts}
               addAppointment={addAppointment}
             />
           } /* Add props to AppointmentsPage */

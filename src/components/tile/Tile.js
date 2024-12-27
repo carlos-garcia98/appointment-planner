@@ -4,10 +4,10 @@ export const Tile = ({ name, description }) => {
   return (
     <div className="tile-container">
       <p className="tile-title">{name}</p>
-      {Object.values(description).map((value, index) => {
+      {Object.values(description).map((key, index) => {
         return (
           <p key={index} className="tile">
-            {value}
+            {key}
           </p>
         );
       })}
